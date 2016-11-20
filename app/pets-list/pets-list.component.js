@@ -11,7 +11,7 @@ class PetListController {
   }
 
   selectPet(pet) {
-    this.PetsService.selectPet(pet)
+    this.PetsService.selectPet(pet);
   }
 
   loadAllPets() {

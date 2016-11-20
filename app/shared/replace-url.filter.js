@@ -13,5 +13,5 @@ export default function () {
     text = text.replace(regexNonHttp, "$1<a href=\"http://$2\" target=\"_blank\">$2</a>");
 
     return text;
-  }
+  };
 }
