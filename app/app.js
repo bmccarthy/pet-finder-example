@@ -3,7 +3,7 @@ import angular from "angular";
 import ngSanitize from "angular-sanitize";
 
 // module dependencies
-import MyAppComponent from "./my-app.component";
+import MyAppComponent from "./my-app/my-app.component";
 import PetsDetailComponent from "./pets-detail/pets-detail.component";
 import PetListComponent from "./pets-list/pets-list.component";
 import PetsService from "./shared/pets.service";
