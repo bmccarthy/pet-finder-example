@@ -1,5 +1,6 @@
 class PetListController {
   constructor(PetsService, PostalCodeService) {
+    "ngInject";
     this.PetsService = PetsService;
     this.PostalCodeService = PostalCodeService;
     this.pets = [];

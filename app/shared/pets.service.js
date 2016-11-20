@@ -1,5 +1,6 @@
 export default class PetsService {
   constructor($http, $sce, $window, $q) {
+    "ngInject";
     this.$http = $http;
     this.$sce = $sce;
     this.$q = $q;

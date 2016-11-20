@@ -1,5 +1,6 @@
 class PetDetailController {
   constructor(PetsService) {
+    "ngInject";
     this.PetsService = PetsService;
   }
 }

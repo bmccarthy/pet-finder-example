@@ -1,5 +1,6 @@
 class MyAppController {
   constructor(PetsService) {
+    "ngInject";
     this.PetsService = PetsService;
   }
 }

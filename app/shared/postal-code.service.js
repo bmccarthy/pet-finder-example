@@ -1,5 +1,6 @@
 export default class PostalCodeService {
   constructor($http, $window, $q) {
+    "ngInject";
     this.$http = $http;
     this.$window = $window;
     this.$q = $q;
