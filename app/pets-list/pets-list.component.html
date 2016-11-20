@@ -1,7 +1,7 @@
 <input type="text" class="form-control" ng-model="$ctrl.filter" placeholder="Filter...">
 
 <div class="list-group">
-  <a href="#" class="list-group-item" ng-class="{active: $ctrl.PetsService.getCurrentPet() == pet}" ng-click="$ctrl.selectPet(pet)"
+  <a href="#" class="list-group-item" ng-class="{active: $ctrl.selectedPet === pet}" ng-click="$ctrl.selectPet(pet)"
     ng-repeat="pet in $ctrl.pets | filter:$ctrl.criteriaMatch($ctrl.filter) as results">
     {{pet.name}}
   </a>

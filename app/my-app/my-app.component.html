@@ -2,12 +2,12 @@
   <div class="row">
     <div class="col-md-4">
       <h3>Pet List</h3>
-      <pet-list></pet-list>
+      <pet-list pet-selected="$ctrl.onPetChanged({pet: pet})"></pet-list>
     </div>
     <div class="col-md-8">
-      <pet-detail ng-if="$ctrl.PetsService.getCurrentPet() != null"></pet-detail>
-      <div ng-if="$ctrl.PetsService.getCurrentPet() == null">
-        <h2>Select a pet on the left to see the details</h2>
+      <pet-detail pet="$ctrl.pet" ng-if="$ctrl.pet != null"></pet-detail>
+      <div ng-if="$ctrl.pet == null">
+        <h2>Select a pet to see the details</h2>
       </div>
     </div>
   </div>

@@ -4,6 +4,7 @@ class PetListController {
     this.PetsService = PetsService;
     this.PostalCodeService = PostalCodeService;
     this.pets = [];
+    this.selectedPet = null;
     this.filter = "";
     this.loading = false;
 
@@ -12,7 +13,8 @@ class PetListController {
   }
 
   selectPet(pet) {
-    this.PetsService.selectPet(pet);
+    this.selectedPet = pet;
+    this.petSelected({ pet: pet });
   }
 
   loadAllPets() {
@@ -36,6 +38,9 @@ class PetListController {
 }
 
 export default {
+  bindings: {
+    petSelected: "&"
+  },
   template: require("./pets-list.component.html"),
   controller: PetListController
 };

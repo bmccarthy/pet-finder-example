@@ -1,11 +1,13 @@
 class PetDetailController {
-  constructor(PetsService) {
+  constructor() {
     "ngInject";
-    this.PetsService = PetsService;
   }
 }
 
 export default {
+  bindings: {
+    pet: "<"
+  },
   template: require("./pets-detail.component.html"),
   controller: PetDetailController
 };

@@ -1,7 +1,11 @@
 class MyAppController {
-  constructor(PetsService) {
+  constructor() {
     "ngInject";
-    this.PetsService = PetsService;
+    this.pet = null;
+  }
+
+  onPetChanged(selectedPet) {
+    this.pet = selectedPet.pet;
   }
 }
 

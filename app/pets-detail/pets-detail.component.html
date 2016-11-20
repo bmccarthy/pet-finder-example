@@ -1,12 +1,9 @@
-<div ng-if="$ctrl.PetsService.getCurrentPet()">
-  <h2>{{$ctrl.PetsService.getCurrentPet().name}}</h2>
+<div>
+  <h2>{{$ctrl.pet.name}}</h2>
 
-  <span style="white-space: pre-line" ng-bind-html="$ctrl.PetsService.getCurrentPet().description | replaceUrl"></span>
+  <span style="white-space: pre-line" ng-bind-html="$ctrl.pet.description | replaceUrl"></span>
 
-  <div ng-repeat="photo in $ctrl.PetsService.getCurrentPet().photos">
+  <div ng-repeat="photo in $ctrl.pet.photos">
     <img src="{{photo}}" />
   </div>
-
-  <!--<pre>{{$ctrl.PetsService.getCurrentPet() | json}}</pre>-->
-
 </div>
