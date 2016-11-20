@@ -15,7 +15,6 @@ class PetListController {
   }
 
   loadAllPets() {
-    // todo: add loading indicator while loading list
     // todo: add infinite-scroll from "https://sroze.github.io/ngInfiniteScroll/index.html" to load more pets besides the initial list of 25 items.
     this.loading = true;
 
