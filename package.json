@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --inline --progress --port 3000"
   },
   "author": "Brian McCarthy",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "angular": "^1.5.8",
     "angular-sanitize": "^1.5.8",
